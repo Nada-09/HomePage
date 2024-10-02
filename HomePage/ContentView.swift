@@ -36,7 +36,13 @@ struct ContentView: View {
                             
                             Spacer()
                             
-                            
+                            HStack{
+                                Text("Let’s make today a productive one")
+                                    .foregroundColor(Color.red)
+                                    .frame(maxWidth: 200,maxHeight: 700, alignment: .bottomLeading)
+                                    .font(.title)
+                                    .background(.black)
+                            }
                             Button{
                                 isPresented = true
                             } label: {
